@@ -274,7 +274,7 @@ def run_test_get_passengers():
     expected_capacity = 20
     expected_num_floors = 18
     expected_num_passengers = 2
-    print('Expected passengers returns ', True)
+    print('Expected', True)
     print("Expected:", expected_capacity, expected_num_floors, expected_num_passengers)
 
     ################################################################
@@ -282,7 +282,7 @@ def run_test_get_passengers():
     #     Add your values for actual below here
     #
     ################################################################
-    print('Actual passengers returns ', e1.get_passengers(expected_num_passengers))
+    print('Actual', e1.get_passengers(expected_num_passengers))
     print("Actual:", e1.capacity, e1.num_floors, e1.people_in)
     if (expected_capacity == e1.capacity) and (expected_num_floors == e1.num_floors) and (expected_num_passengers == e1.people_in):
         print("Test passed SUCCESSFULLY!")
@@ -294,9 +294,9 @@ def run_test_get_passengers():
     expected_capacity = 20
     expected_num_floors = 22
     expected_num_passengers = 0
-    print('Expected passengers returns ', False)
+    print('Expected', False)
     print("Expected:", expected_capacity, expected_num_floors, expected_num_passengers)
-    print('Actual passengers returns ', e2.get_passengers(29))
+    print('Actual', e2.get_passengers(29))
     print("Actual:", e2.capacity, e2.num_floors, e2.people_in)
     if (expected_capacity == e2.capacity) and (expected_num_floors == e2.num_floors) and (expected_num_passengers == e2.people_in):
         print("Test passed SUCCESSFULLY!")
@@ -309,9 +309,9 @@ def run_test_get_passengers():
     expected_num_floors = 28
     expected_num_passengers = 5
     e3.get_passengers(5)
-    print('Expected passengers returns ', False)
+    print('Expected', False)
     print("Expected:", expected_capacity, expected_num_floors, expected_num_passengers)
-    print('Actual passengers returns ', e3.get_passengers(32))
+    print('Actual', e3.get_passengers(32))
     print("Actual:", e3.capacity, e3.num_floors, e3.people_in)
     if (expected_capacity == e3.capacity) and (expected_num_floors == e3.num_floors) and (
             expected_num_passengers == e3.people_in):
