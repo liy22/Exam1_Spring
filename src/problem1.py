@@ -268,7 +268,6 @@ def run_test_get_passengers():
     #     and one that returns False
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
-
     # Test 1:  Adds 2 passengers to an empty elevator.
     e1 = Elevator(20, 18)
     expected_capacity = 20
